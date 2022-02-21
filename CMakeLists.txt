@@ -3,4 +3,4 @@ project(C__Demo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(C__Demo main.cpp)
+add_executable(C__Demo main.cpp cnamespace.h)
