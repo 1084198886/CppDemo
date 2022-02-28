@@ -3,6 +3,8 @@
 #include "cheader.h"
 #include "cinout.h"
 #include "cbool.h"
+#include "newdelete.h"
+#include "inlinetest.h"
 #include <cstdio>
 
 int main() {
@@ -10,6 +12,8 @@ int main() {
 //    namespaceTest();
 //    cppHeaderTest();
 //    inOutTest();
-boolTest();
+    boolTest();
+    newdelete();
+    inlineTest(1, 2);
     return 0;
 }

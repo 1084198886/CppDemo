@@ -5,6 +5,8 @@
  * C++ 布尔变量
  */
 #ifndef C__DEMO_CBOOL_H
+
+const int F = 11;
 #define C__DEMO_CBOOL_H
 
 #endif //C__DEMO_CBOOL_H
@@ -18,6 +20,6 @@ void boolTest() {
     if (flag) {
         cout << "flag=" << true << endl;
     } else {
-        cout << "flag=" << false<< endl;
+        cout << "flag=" << false << endl;
     }
 }
