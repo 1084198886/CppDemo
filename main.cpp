@@ -6,10 +6,15 @@
 //#include "newdelete.h"
 //#include "inlinetest.h"
 //#include "coveride.h"
-#include "candcpp.h"
-#include "funcdefaultpara.h"
-#include "cppclass.h"
-#include "cppclass.h"
+//#include "candcpp.h"
+//#include "funcdefaultpara.h"
+//#include "cppclass.h"
+//#include "cppclass2.h"
+//#include "cppclass.h"
+#include "cxigoufunc.h"
+#include "cxigoufuncinvoke.h"
+#include "classarray.h"
+#include "cmemberobj.h"
 #include <cstdio>
 
 
@@ -24,7 +29,12 @@ int main() {
 ////    funcDefaultPara(1, 2);
 ////    cOveride();
 //    testCAndCpp();
-    testCppClass();
+//    testCppClass();
+//    testClass2();
+    xigouFunc();
+    xigouFuncInvokeTime();
+    objArray();
+    memberObj();
     return 0;
 }
 
