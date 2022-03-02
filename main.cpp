@@ -19,6 +19,9 @@
 #include "constmember.h"
 #include "cyouyuanclass.h"
 #include "classscope.h"
+#include "cppstruct.h"
+#include "mycstring.h"
+#include "cppquote.h"
 #include <cstdio>
 
 
@@ -35,14 +38,17 @@ int main() {
 //    testCAndCpp();
 //    testCppClass();
 //    testClass2();
-    xigouFunc();
-    xigouFuncInvokeTime();
-    objArray();
-    memberObj();
-    staticMember();
-    constMember();
-    youyuanFuncTest();
-    classScope();
+//    xigouFunc();
+//    xigouFuncInvokeTime();
+//    objArray();
+//    memberObj();
+//    staticMember();
+//    constMember();
+//    youyuanFuncTest();
+//    classScope();
+//    cppStruct();
+    stringTest();
+    quoteTest();
     return 0;
 }
 
@@ -51,8 +57,8 @@ int main() {
 //}
 
 
-inline int inlineTest(int a, int b) {
-    a += b;
-    printf("%d\n", a);
-    return a;
-}
+//inline int inlineTest(int a, int b) {
+//    a += b;
+//    printf("%d\n", a);
+//    return a;
+//}
