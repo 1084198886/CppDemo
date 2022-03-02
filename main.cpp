@@ -15,6 +15,10 @@
 #include "cxigoufuncinvoke.h"
 #include "classarray.h"
 #include "cmemberobj.h"
+#include "staticmember.h"
+#include "constmember.h"
+#include "cyouyuanclass.h"
+#include "classscope.h"
 #include <cstdio>
 
 
@@ -35,6 +39,10 @@ int main() {
     xigouFuncInvokeTime();
     objArray();
     memberObj();
+    staticMember();
+    constMember();
+    youyuanFuncTest();
+    classScope();
     return 0;
 }
 

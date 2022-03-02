@@ -55,11 +55,14 @@ class CCar { // 封闭类
 private:
     CEngine engine;  //成员对象：一个类的成员变量是另一个类的对象。包含成员对象的类叫封闭类。
     CTyre tyre;  //CCar是封闭类，engine和tyre是成员对象。
+    string name;
 
 public:
     CCar();
 
     ~CCar();
+
+    void setname(string name);
 
     CEngine getCEngine();
 };
@@ -74,6 +77,10 @@ CCar::~CCar() {
 
 CEngine CCar::getCEngine() {
     return engine;
+}
+
+void CCar::setname(string name) {
+    this->name = name;   // this指针
 }
 
 void memberObj() {
