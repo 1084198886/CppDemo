@@ -22,6 +22,7 @@
 #include "cppstruct.h"
 #include "mycstring.h"
 #include "cppquote.h"
+#include "cextend.h"
 #include <cstdio>
 
 
@@ -47,8 +48,9 @@ int main() {
 //    youyuanFuncTest();
 //    classScope();
 //    cppStruct();
-    stringTest();
-    quoteTest();
+//    stringTest();
+//    quoteTest();
+    extendTest();
     return 0;
 }
 

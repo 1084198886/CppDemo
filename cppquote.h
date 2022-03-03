@@ -9,13 +9,15 @@ using namespace std;
 
 void swapVal(int &m, int &n);
 
+void ff(string &m, const string &n);
+
 // 引用类型作为返回值
 int &plus10(int &r) {
     r += 10;
     return r;
 }
 
-void quoteTest() {
+int quoteTest() {
     int a = 1;
     int &b = a;
     b = 2;
@@ -32,6 +34,22 @@ void quoteTest() {
     int &e = c2;
     int f = plus10(e);
     cout << "f=" << f << endl;
+
+//    C++引用不能绑定到临时数据
+    int m = 1, n = 2;
+//    int *p = &(m + n);
+
+
+    string ss = "S1";
+    const char *ss2 = "S2";
+    cout << "&ss=" << &ss << "   &ss2=" << &ss2 << endl;
+    ff(ss, ss2);
+    return 0;
+}
+
+void ff(string &m, const string &n) {
+    cout << "ff  &m=" << &m << endl;
+    cout << "ff  &n=" << &n << endl; // const变量地址发生了变化
 }
 
 // 交换数值
