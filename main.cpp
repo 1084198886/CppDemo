@@ -27,6 +27,8 @@
 #include "cvirtualfunc.h"
 #include "absclass.h"
 #include "ctypeid.h"
+#include "cflagoveride.h"
+#include "ctemplate.h"
 #include <cstdio>
 
 
@@ -59,6 +61,7 @@ int main() {
     virtualFunc();
     absClass();
     typeidTest();
+    flagOverideTest();
     return 0;
 }
 
