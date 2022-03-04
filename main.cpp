@@ -23,6 +23,10 @@
 #include "mycstring.h"
 #include "cppquote.h"
 #include "cextend.h"
+#include "cupcasting.h"
+#include "cvirtualfunc.h"
+#include "absclass.h"
+#include "ctypeid.h"
 #include <cstdio>
 
 
@@ -51,6 +55,10 @@ int main() {
 //    stringTest();
 //    quoteTest();
     extendTest();
+    upcastTest();
+    virtualFunc();
+    absClass();
+    typeidTest();
     return 0;
 }
 
