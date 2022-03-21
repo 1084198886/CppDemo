@@ -29,19 +29,22 @@
 #include "ctypeid.h"
 #include "cflagoveride.h"
 #include "ctemplate.h"
+#include "cexception.h"
+#include "ciostream.h"
+#include "coutfmt.h"
 #include <cstdio>
 
 
 int main() {
 //    std::cout << "Hello, World!" << std::endl;
-////    namespaceTest();
-////    cppHeaderTest();
-////    inOutTest();
-////    boolTest();
-////    newdelete();
-////    inlineTest(1, 2);
-////    funcDefaultPara(1, 2);
-////    cOveride();
+//    namespaceTest();
+//    cppHeaderTest();
+//    inOutTest();
+//    boolTest();
+//    newdelete();
+//    inlineTest(1, 2);
+//    funcDefaultPara(1, 2);
+//    cOveride();
 //    testCAndCpp();
 //    testCppClass();
 //    testClass2();
@@ -56,12 +59,16 @@ int main() {
 //    cppStruct();
 //    stringTest();
 //    quoteTest();
-    extendTest();
-    upcastTest();
-    virtualFunc();
-    absClass();
-    typeidTest();
-    flagOverideTest();
+//    extendTest();
+//    upcastTest();
+//    virtualFunc();
+//    absClass();
+//    typeidTest();
+//    flagOverideTest();
+//    templateTest();
+//    exceptionTest();
+//    iostreamTest();
+    coutFmtTest();
     return 0;
 }
 
