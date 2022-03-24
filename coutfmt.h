@@ -36,6 +36,16 @@ void coutFmtTest() {
     cout << "b=" << b << endl;
 
 
+    cout << "Hello world !" << endl;  // inserts a newline, then flushes the buffer
+    cout << "Hello world !" << ends; // inserts a null, then flushes the buffer
+    cout << "Hello world !" << flush; // flushes the buffer; adds no data
+
+    cin.tie(&cout);
+    ostream *old_tie = cin.tie();
+    cin.tie(0);
+    cin.tie(old_tie);
+
+
     // 流的重定向
     ifstream fin;
     fin.open("demo.txt");
@@ -43,10 +53,10 @@ void coutFmtTest() {
     cin.rdbuf(fin.rdbuf());
 
     // cin will read from file;
-    char *c1 = NULL,*c2=NULL;
-    cin>>c1;
+    char *c1 = NULL, *c2 = NULL;
+    cin >> c1;
 
-    cout<<c1<<c2<<endl;
+    cout << c1 << c2 << endl;
 
     cin.rdbuf(backup);
 

@@ -33,6 +33,8 @@
 #include "ciostream.h"
 #include "coutfmt.h"
 #include <cstdio>
+#include "creadchar.h"
+#include "cfstream.h"
 
 
 int main() {
@@ -68,7 +70,9 @@ int main() {
 //    templateTest();
 //    exceptionTest();
 //    iostreamTest();
-    coutFmtTest();
+//    coutFmtTest();
+//    readCharTest();
+    fstreamTest();
     return 0;
 }
 
@@ -82,3 +86,21 @@ int main() {
 //    printf("%d\n", a);
 //    return a;
 //}
+
+class  AAAA{
+public:
+    int a;
+    static int b;
+    static int say();
+     int say2();
+};
+
+int AAAA::say() {
+    b=3;
+    return 0;
+}
+
+int AAAA::say2() {
+    this->a=3;
+    return 0;
+}
