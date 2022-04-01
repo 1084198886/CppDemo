@@ -38,7 +38,12 @@
 #include "readwritebinaryfile.h"
 #include "getputfile.h"
 #include "cseekfileptr.h"
+//#include "multifileprogram_stu.cpp"
+#include "multifileprogram_stu.h"
+#include "namespacemain.h"
 
+
+void multiFileProgram();
 
 int main() {
 //    std::cout << "Hello, World!" << std::endl;
@@ -77,9 +82,26 @@ int main() {
 //    readCharTest();
 //    fstreamTest();
 //    readWriteFile();
-    getputTest();
-    seekFilePtr();
+//    getputTest();
+//    seekFilePtr();
+    multiFileProgram();
+    namespaceTest();
     return 0;
+}
+
+/**
+    * 多文件编程
+    * https://wenku.baidu.com/view/bb5e61870329bd64783e0912a216147917117ee0.html
+    */
+void multiFileProgram() {
+    MyStudent *stu = new MyStudent;
+    stu->name = "zhangsan";
+    stu->age = 12;
+    stu->score = 11.2f;
+    stu->say();
+    delete stu;  // 释放对象内存；
+    cout << "num=" << num << endl;  // 使用头文件中定义的const常量；
+    cout << "score=" << score << endl;  // 使用头文件中定义的const常量；
 }
 
 //int main(int argc, char *args[]) {
