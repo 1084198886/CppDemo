@@ -35,6 +35,9 @@
 #include <cstdio>
 #include "creadchar.h"
 #include "cfstream.h"
+#include "readwritebinaryfile.h"
+#include "getputfile.h"
+#include "cseekfileptr.h"
 
 
 int main() {
@@ -72,7 +75,10 @@ int main() {
 //    iostreamTest();
 //    coutFmtTest();
 //    readCharTest();
-    fstreamTest();
+//    fstreamTest();
+//    readWriteFile();
+    getputTest();
+    seekFilePtr();
     return 0;
 }
 
@@ -86,21 +92,3 @@ int main() {
 //    printf("%d\n", a);
 //    return a;
 //}
-
-class  AAAA{
-public:
-    int a;
-    static int b;
-    static int say();
-     int say2();
-};
-
-int AAAA::say() {
-    b=3;
-    return 0;
-}
-
-int AAAA::say2() {
-    this->a=3;
-    return 0;
-}

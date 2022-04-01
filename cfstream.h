@@ -71,6 +71,51 @@ void fstreamTest() {
     } else {
         printf("open ioFile file.txt fail\n");
     }
+
+    //close（）关闭文件详解
+    fstream ioStream;
+    ioStream.open("F:\\file2.txt", ios::out);
+    if (ioStream) {
+        char str[] = "AAAAAA";
+        ioStream.write(str, sizeof(str) - 1);
+        printf("open file2.txt success\n");
+    } else {
+        printf("open file2.txt fail\n");
+    }
+
+    ioStream.close();
+    if (ioStream.fail()) {
+        cout << "error happended when close file!\n" << endl;
+    }
+
+    /**
+     * 使用<< 和 >>读写文本文件；
+     */
+    ifstream srcFile("F:\\src.txt", ios::in);
+    if (!srcFile) {
+        srcFile.close();
+        printf("open src file error!\n");
+    } else {
+        printf("open src file suc!\n");
+    }
+    ofstream destFile("F:\\dest.txt", ios::out);
+    if (!destFile) {
+        srcFile.close();
+        printf("open dest file error!\n");
+    } else {
+        printf("open dest file suc!\n");
+    }
+
+    int m, sum = 0;
+    //可以像用cin那样用ifstream对象
+    while (srcFile >> m) {
+        sum += m;
+        destFile << m << "|";
+    }
+
+    printf("read finished sum=%d\n", sum);
+    srcFile.close();
+    destFile.close();
 }
 
 #define C__DEMO_CFSTREAM_H
